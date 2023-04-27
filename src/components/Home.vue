@@ -1,4 +1,18 @@
 <template>
+    <!-- <div class="container">
+        <div class="menu">
+            <div class="coluna 1">
+                <RouterLink to="/"> <h3>Home</h3> </RouterLink>
+            </div>
+            <div class="coluna 2">
+                <RouterLink to="/about"> <h3>More</h3> </RouterLink>
+            </div>
+            <div class="coluna 3">
+                <RouterLink to="/contact"> <h3>Contact</h3> </RouterLink> 
+            </div>
+        </div>
+    </div>    -->
+
   <div class="main-container">
     
     <div class="container-one">
@@ -7,6 +21,7 @@
         <h3>Samuel Esdras Navarro</h3>
         <p class="profession">Software Developer</p>
       </div>
+      <br>
       <div class="social-links">
           <div class="link">
             <img src="../assets/github2.jpeg" alt="">
@@ -15,7 +30,7 @@
           <br>
           <div class="link">
             <img src="../assets/ln.jpeg" alt="">
-            <a href="https://github.com/samuca-navarro"><h2>Linkedin</h2></a>
+            <a href="https://br.linkedin.com/in/samuel-navarro-17a60b199"><h2>Linkedin</h2></a>
           </div>
       </div>
     </div>
@@ -35,7 +50,7 @@
         mollit anim id est laborum</p>
       </div>
       <div class="knowledge">
-       <h1>Interests</h1>
+       <h1>Technologies Studied</h1>
        <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing 
         elit, sed do eiusmod tempor incididunt ut labore et 
@@ -48,8 +63,8 @@
         proident, sunt in culpa qui officia deserunt 
         mollit anim id est laborum
        </p>  
-       <h1>Technologies Studied</h1>
-       <!-- <div class="row">
+       <!-- <h1>Technologies Studied</h1>
+       <div class="row">
           <div class="coluna">
            <img src="../assets/py.jpg" alt="">
           </div>
@@ -58,14 +73,17 @@
           </div>
        </div> -->
       </div>
-    
+      <br>
       <div>
         <div class="button-container">
           <div class="projects-button">
             <a href=""><h2>My Projects</h2></a>
           </div>
           <div class="projects-button">
-            <a href=""><h2>My Resume</h2></a>
+            <a href="../public/cv.pdf" download target="_blank"><h2>My Resume</h2></a>
+          </div>
+          <div class="projects-button">
+            <RouterLink to="/contact"> <h2>Contact me</h2> </RouterLink>
           </div>
         </div>
       </div>
@@ -96,7 +114,7 @@ export default{
 .projects-button {
   background-color: rgb(80, 115, 146);
   margin: 5px; 
-  border-radius: 5%;
+  border-radius: 10%;
 }
 
 img{
@@ -121,7 +139,7 @@ img{
 .link a{
   text-decoration: none;
   color:black;
-  text-align: center
+  text-align: center;
 }
 
 /* .link img{
@@ -136,7 +154,7 @@ img{
 }
 
 .container-one{
-  background-color:aqua;
+  background-color:rgb(80, 115, 146);
   padding: 3%;
   width: 30%;
   border-radius: 25px;
@@ -154,6 +172,7 @@ img{
 
 img{
   align-content: center;
+  border-radius: 6%;
 }
 
 h3{
@@ -174,3 +193,4 @@ a{
 }
 
 </style>
+
